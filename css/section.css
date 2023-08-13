@@ -1,0 +1,48 @@
+.sectionMain {
+    background: white;
+    margin: 10px 0;
+}
+
+.section__header {
+    margin: 0;
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.section {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-gap: 0px;
+}
+
+@media(max-width:767px) {
+    .section {
+        grid-template-columns: 1fr;
+    }
+}
+
+.section__input {
+    border: 1px solid #f4eded;
+    padding: 10px;
+    margin: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.section__button {
+    background: teal;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.section__button:hover {
+    background: hsl(170, 38%, 46%);
+}
+
+.section__button {
+    cursor: pointer;
+}
